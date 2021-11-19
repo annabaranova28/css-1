@@ -4,44 +4,72 @@
 
 .background {
     position: relative;
-    width: 500px;
+    width: 700px;
     height: 800px;
-    border: dashed;
+    
     margin-top: 30px;
     margin-left: 20px;
     z-index: 1;
-    background: rgb(182, 182, 182);
+    background: rgb(29, 25, 14);
 }
 .greenbox {
     position: absolute;
     padding:1px;
-    width: 300px;
-    height: 800px;
+    width: 100px;
+    height: 300px;
     z-index: 2;
-    opacity: 0.9;
-    background: rgb(123, 138, 87);
     top: 150px;
     left: 200px;
 
 }
+.greenbox img {
+    width: 750px;
+}
 
 .goldbox {
     position: absolute;
-    width: 700px;
-    height: 450px;
+    width: 100px;
+    height: 20px;
     z-index: 3;
-    background: rgb(121, 101, 78);
-    top: 400px;
+    
+    top: 290px;
     left: 50px;
+    animation: width-animation 0.5s infinite alternate;
 
+}
+
+.goldbox img {
+    width: 140px;
+
+}
+@keyframes width-animation {
+    from {
+        left: 80px;
+    }
+    to {
+        left: 400px;
+    }
+    
 }
 
 .headline {
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 50pt;
     position: absolute;
     width: 300px;
-    height: 150px;
-    z-index: 2;
-    background: rgb(121, 101, 78);
-    top: 400px;
-    left: 50px;
+    height: 100px;
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    top: 20px;
+    left: 100px;
 }
+ .headline:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80pt;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    z-index: 4;
+    color: rgb(245, 48, 90);
+    transition: all 0.8s;
+ }
